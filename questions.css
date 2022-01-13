@@ -4,29 +4,32 @@
     justify-content: center;
     align-items: center;
     flex-flow: column;
-    width: 600px;
+    width:700px;
     margin:auto;
+    margin-top: 10%;
 }
 
 .question{
      display: flex;
      justify-content: space-between;
-     width: 600px;
+     width: 700px;
 }
 .questionCard{
  width: 100%;
- margin: 1rem;
+ margin: 1.9rem;
 }
 
 h1{
     color: #caa501;
     font-family: 'Great Vibes', cursive;
+    font-size: 3rem;
 }
 
 h2{
     font-family: 'Lato', sans-serif;
     font-weight: 300;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
+    margin-top: 1rem;
 }
 
 button{
@@ -35,24 +38,12 @@ border:none;
     font-size: 2rem;
     transform-origin: center ;
     cursor: pointer;
-    
-
 }
 
-   @keyframes myanimation {
-            from {
-                transform: rotate(0deg) scale(1); 
-                transition: transform 1s;
-            }
-            to {
-                transform: rotate(45deg) ;
-                 transition: transform 1s;
-            }
-        }
 
 button:hover{
-   
-   animation-name: myanimation;
+    transform: scale(1.2);
+    transition: all 1s;
 }
 
 p{
