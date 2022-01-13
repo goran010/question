@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato:ital,wght@0,100;0,300;1,700&display=swap');
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    width: 600px;
+    margin:auto;
+}
+
+.question{
+     display: flex;
+     justify-content: space-between;
+     width: 600px;
+}
+.questionCard{
+ width: 100%;
+ margin: 1rem;
+}
+
+h1{
+    color: #caa501;
+    font-family: 'Great Vibes', cursive;
+}
+
+h2{
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 1.3rem;
+}
+
+button{
+border:none;
+    height:2rem;
+    font-size: 2rem;
+    transform-origin: center ;
+    cursor: pointer;
+    
+
+}
+
+   @keyframes myanimation {
+            from {
+                transform: rotate(0deg) scale(1); 
+                transition: transform 1s;
+            }
+            to {
+                transform: rotate(45deg) ;
+                 transition: transform 1s;
+            }
+        }
+
+button:hover{
+   
+   animation-name: myanimation;
+}
+
+p{
+    display:none;
+    color:#617d98;
+    border-top: 0.5px solid silver;
+    padding-top: 1rem;
+    font-size: 1.2rem;
+}
+.visible{
+    display:block ;
+}
