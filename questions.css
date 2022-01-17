@@ -38,14 +38,22 @@ border:none;
     font-size: 2rem;
     transform-origin: center ;
     cursor: pointer;
+    margin
 }
+
 
 
 button:hover{
-    transform: scale(1.2);
-    transition: all 1s;
+    animation: animate 2s alternate infinite ease-in-out;
 }
-
+@keyframes animate{
+    from{
+        transform:scale(1) rotate(0deg);
+    }
+    to{
+        transform:scale(1.5) rotate(90deg);
+    }
+}
 p{
     display:none;
     color:#617d98;
