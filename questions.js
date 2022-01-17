@@ -7,4 +7,17 @@ for (let button of buttonsList) {
         answers[buttonsList.indexOf(button)].classList.toggle("visible");
     })
 }
+document.addEventListener('keydown', (event) => {
+    let code = event.code;
+    if( code === "Digit1")
+    {
+        answers[0].classList.toggle("visible");
+    }
+    if (code === "Digit2") {
+        answers[0].classList.toggle("visible");
+    }
+    if (code === "Digit3") {
+        answers[0].classList.toggle("visible");
+    }
+});
 
