@@ -38,29 +38,38 @@ border:none;
     font-size: 2rem;
     transform-origin: center ;
     cursor: pointer;
-    margin
 }
-
 
 
 button:hover{
-    animation: animate 2s alternate infinite ease-in-out;
+    animation: animateIcon 1s alternate-reverse infinite ease-in-out;
 }
-@keyframes animate{
+
+@keyframes animateIcon{
     from{
         transform:scale(1) rotate(0deg);
     }
     to{
-        transform:scale(1.5) rotate(90deg);
+        transform:scale(1.3) rotate(90deg);
+    }
+}
+@keyframes animateText{
+    from{
+       color:#ffff;
+       transform:translateY(-1rem) ;
+    }
+    to{
+        color:#617d98;
     }
 }
 p{
     display:none;
-    color:#617d98;
     border-top: 0.5px solid silver;
+    color:#617d98;
     padding-top: 1rem;
     font-size: 1.2rem;
+    animation: animateText 1s ease-out;
 }
 .visible{
-    display:block ;
+    display:block;
 }
