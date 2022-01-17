@@ -9,15 +9,14 @@ for (let button of buttonsList) {
 }
 document.addEventListener('keydown', (event) => {
     let code = event.code;
-    if( code === "Digit1")
-    {
+    if (code === "Digit1") {
         answers[0].classList.toggle("visible");
     }
     if (code === "Digit2") {
-        answers[0].classList.toggle("visible");
+        answers[1].classList.toggle("visible");
     }
     if (code === "Digit3") {
-        answers[0].classList.toggle("visible");
+        answers[2].classList.toggle("visible");
     }
 });
 
